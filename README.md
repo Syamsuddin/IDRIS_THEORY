@@ -10,13 +10,13 @@ Silakan copy–paste langsung:
 # IDRIS_THEORY  
 ### *Teori Idris — Spectral Information Theory of Everything*
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.0000000.svg)](https://zenodo.org/)
-![License](https://img.shields.io/badge/License-CC--BY--4.0-blue.svg)
-![Status](https://img.shields.io/badge/Status-Active-green.svg)
-![Python](https://img.shields.io/badge/Python-3.10+-brightgreen.svg)
-![LaTeX](https://img.shields.io/badge/LaTeX-Scientific-blue.svg)
-![Theoretical Physics](https://img.shields.io/badge/Field-Theoretical%20Physics-purple.svg)
-![Graph Theory](https://img.shields.io/badge/Graph-Ramanujan--Idris-orange.svg)
+[[DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.0000000.svg)](https://zenodo.org/)
+[License](https://img.shields.io/badge/License-CC--BY--4.0-blue.svg)
+[Status](https://img.shields.io/badge/Status-Active-green.svg)
+[Python](https://img.shields.io/badge/Python-3.10+-brightgreen.svg)
+[LaTeX](https://img.shields.io/badge/LaTeX-Scientific-blue.svg)
+[Theoretical Physics](https://img.shields.io/badge/Field-Theoretical%20Physics-purple.svg)
+[Graph Theory](https://img.shields.io/badge/Graph-Ramanujan--Idris-orange.svg)
 
 ---
 
