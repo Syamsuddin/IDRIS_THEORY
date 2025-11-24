@@ -1,8 +1,3 @@
-## ✨ README.md versi baru, rapi, badge tampil, equation tampil, 100% Markdown valid
-
-Silakan copy–paste langsung:
-
----
 
 # **📄 README.md — IDRIS_THEORY (Fixed & Improved)**
 
