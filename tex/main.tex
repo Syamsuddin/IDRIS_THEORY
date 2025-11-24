@@ -1,0 +1,236 @@
+\documentclass[12pt,a4paper,oneside]{book}
+
+% Required packages
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{graphicx}
+\usepackage{xcolor,pagecolor}
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage{cite}
+\usepackage{setspace}
+\usepackage{indentfirst}
+\usepackage{listings}
+\usepackage{fancyvrb}
+\usepackage{newunicodechar}
+\newunicodechar{₀}{$_0$}
+\newunicodechar{₁}{$_1$}
+\newunicodechar{₂}{$_2$}
+\newunicodechar{₃}{$_3$}
+\newunicodechar{₄}{$_4$}
+\newunicodechar{₅}{$_5$}
+\newunicodechar{₆}{$_6$}
+\newunicodechar{₇}{$_7$}
+\newunicodechar{₈}{$_8$}
+\newunicodechar{₉}{$_9$}
+\newunicodechar{≥}{$\geq$}
+\newunicodechar{≤}{$\leq$}
+\newunicodechar{∼}{$\sim$}
+\newunicodechar{∞}{$\infty$}
+\newunicodechar{→}{$\to$}
+\newunicodechar{←}{$\leftarrow$}
+\newunicodechar{↔}{$\leftrightarrow$}
+\newunicodechar{⇒}{$\Rightarrow$}
+\newunicodechar{⇐}{$\Leftarrow$}
+\newunicodechar{⇔}{$\Leftrightarrow$}
+\newunicodechar{∂}{$\partial$}
+\newunicodechar{∇}{$\nabla$}
+\newunicodechar{∏}{$\prod$}
+\newunicodechar{∑}{$\sum$}
+\newunicodechar{√}{$\sqrt{}$}
+\newunicodechar{∫}{$\int$}
+\newunicodechar{∬}{$\iint$}
+\newunicodechar{ℓ}{$\ell$}
+\newunicodechar{∈}{$\in$}
+\newunicodechar{⁻}{$^{-}$}
+\newunicodechar{ℏ}{$\hbar$}
+\newunicodechar{≡}{$\equiv$}
+\newunicodechar{ν}{$\nu$}
+\newunicodechar{∭}{$\iiint$}
+\newunicodechar{∮}{$\oint$}
+\newunicodechar{∝}{$\propto$}
+\newunicodechar{≈}{$\approx$}
+\newunicodechar{≠}{$\neq$}
+\newunicodechar{±}{$\pm$}
+\newunicodechar{∓}{$\mp$}
+\newunicodechar{×}{$\times$}
+\newunicodechar{÷}{$\div$}
+\newunicodechar{⁰}{$^0$}
+\newunicodechar{¹}{$^1$}
+\newunicodechar{²}{$^2$}
+\newunicodechar{³}{$^3$}
+\newunicodechar{⁴}{$^4$}
+\newunicodechar{⁵}{$^5$}
+\newunicodechar{⁶}{$^6$}
+\newunicodechar{⁷}{$^7$}
+\newunicodechar{⁸}{$^8$}
+\newunicodechar{⁹}{$^9$}
+\newunicodechar{λ}{$\lambda$}
+\newunicodechar{α}{$\alpha$}
+\newunicodechar{β}{$\beta$}
+\newunicodechar{γ}{$\gamma$}
+\newunicodechar{δ}{$\delta$}
+\newunicodechar{ε}{$\varepsilon$}
+\newunicodechar{θ}{$\theta$}
+\newunicodechar{π}{$\pi$}
+\newunicodechar{σ}{$\sigma$}
+\newunicodechar{φ}{$\phi$}
+\newunicodechar{ψ}{$\psi$}
+\newunicodechar{ω}{$\omega$}
+\newunicodechar{Λ}{$\Lambda$}
+\newunicodechar{Γ}{$\Gamma$}
+\newunicodechar{Δ}{$\Delta$}
+\newunicodechar{Θ}{$\Theta$}
+\newunicodechar{Φ}{$\Phi$}
+\newunicodechar{Ψ}{$\Psi$}
+\newunicodechar{Ω}{$\Omega$}
+\newunicodechar{≫}{$\gg$}
+\newunicodechar{≺}{$\prec$}
+\newunicodechar{≻}{$\succ$}
+\newunicodechar{≼}{$\preccurlyeq$}
+\newunicodechar{≽}{$\succcurlyeq$}
+
+% Page setup
+\geometry{margin=1in}
+
+% Listings configuration for code
+\lstset{
+    basicstyle=\ttfamily\small,
+    breaklines=true,
+    breakatwhitespace=true,
+    columns=flexible,
+    keepspaces=true,
+    showstringspaces=false,
+    frame=single,
+    numbers=left,
+    numberstyle=\tiny,
+    xleftmargin=2em,
+    framexleftmargin=1.5em
+}
+
+% Redefine verbatim to use smaller font size
+\RecustomVerbatimEnvironment{verbatim}{Verbatim}{fontsize=\small}
+
+% Theorem environments
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{axiom}{Axiom}[section]
+\newtheorem{definition}{Definition}[section]
+\newtheorem{remark}{Remark}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}{Corollary}[section]
+\newtheorem{example}{Example}[section]
+
+% Document start
+\begin{document}
+
+% Cover page (full image, no margins)
+% Note: Replace this with actual cover image when available
+\thispagestyle{empty}
+\newgeometry{margin=0pt}
+\IfFileExists{img/cover.png}{%
+  \begin{figure}[p]
+  \centering
+  \includegraphics[width=\paperwidth,height=\paperheight]{img/cover.png}
+  \end{figure}
+}{%
+  % Temporary cover page - replace with actual image
+  \pagecolor{black}
+  \begin{center}
+  \vspace*{\fill}
+  {\color{white}\Huge\textbf{TEORI IDRIS}}\\[1cm]
+  {\color{white}\Large Supremasi Informasi dan Asal Realitas\\[0.3cm]
+  Alam Semesta menuju \textit{Theory of Everything}\\[2cm]
+  Syamsuddin B. Idris}
+  \vspace*{\fill}
+  \end{center}
+  \nopagecolor
+}%
+\clearpage
+\restoregeometry
+
+% Bibliographic information page
+\thispagestyle{empty}
+\vspace*{3cm}
+\noindent
+\textbf{\Large Teori Idris}\\[0.5cm]
+\textit{Supremasi Informasi dan Asal Realitas Alam Semesta menuju Theory of Everything}\\[2cm]
+
+\noindent
+\begin{tabular}{@{}ll}
+\textbf{Penulis:} & Syamsuddin B. Idris\\[1cm]
+\textbf{Penerbit:} & {[Nama Penerbit]}\\[0.5cm]
+\textbf{Tahun Terbit:} & 2025\\[1cm]
+\textbf{ISBN:} & {[ISBN Number]}\\[1cm]
+\textbf{Hak Cipta:} & \copyright\ 2025 Syamsuddin B. Idris\\
+ & Hak cipta dilindungi undang-undang.\\[1cm]
+\textbf{Cetakan Pertama:} & November 2025\\[2cm]
+\end{tabular}
+
+\vfill
+
+\noindent
+\small
+Dilarang memperbanyak, menyalin, atau menggandakan sebagian atau seluruh isi buku ini\\
+dalam bentuk apapun tanpa izin tertulis dari penulis atau penerbit.\\[0.5cm]
+
+\noindent
+Dicetak di Indonesia
+
+\clearpage
+
+% Front matter
+\frontmatter
+
+% Abstract
+\input{00-A-ABSTRAK}
+\addcontentsline{toc}{chapter}{Abstrak}
+
+% Table of contents
+\tableofcontents
+
+% Preface/Introduction
+\input{00-B-KATA-PENGANTAR}
+
+% Main content
+\mainmatter
+
+% Chapters
+\input{01-BAB-I-SPI}
+\input{02-BAB-II-IO}
+\input{03-BAB-III-RJI}
+\input{04-BAB-IV-SD}
+\input{05-BAB-V-SD-WHI-SP}
+\input{06-BAB-VI-SP}
+\input{07-BAB-VII-WHI}
+\input{08-BAB-VIII-SE}
+\input{09-BAB-IX-IRG}
+\input{10-BAB-X-GR-QFT}
+\input{11-BAB-XI-KONSTANTA}
+\input{12-BAB-XII-4GAYA}
+\input{13-BAB-XIII-GAYA5}
+\input{14-BAB-XIV-PARTIKEL-SM}
+\input{15-BAB-XV-IDE}
+\input{16-BAB-XVI-IDM}
+\input{17-BAB-XVII-KOSMOLOGI}
+\input{18-BAB-XVIII-MULTIVERSE}
+\input{19-BAB-XIX-DINAMIKA}
+\input{20-BAB-XX-FALSIFIKASI}
+\input{21-BAB-XXI-FENOMENA}
+\input{22-BAB-XXII-EPILOG}
+
+% Appendices
+\appendix
+\input{LAMPIRAN-A-PAMI}
+\input{LAMPIRAN-B-KALKULASI-KONSTANTA}
+\input{LAMPIRAN-C-KALKULASI-PARTIKEL-SM}
+\input{LAMPIRAN-D-KALKULASI-IDE}
+\input{LAMPIRAN-E-KALKULASI-IDM}
+\input{LAMPIRAN-F-KALKULASI-KOSMOLOGI}
+\input{LAMPIRAN-G-PEMBUKTIAN-SPEKTRAL}
+
+% Bibliography/References
+\input{DAFTAR-PUSTAKA}
+
+\end{document}
