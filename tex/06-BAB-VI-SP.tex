@@ -1,0 +1,134 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% BAB VI — ERA PLANCKIAN (SP) DAN EMERGENSI AWAL GEOMETRI
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Era Planckian (SP) dan Emergensi Awal Geometri}
+\label{chap:SP}
+
+Setelah fase transien White Hole Informasi (WHI), sistem memasuki 
+\emph{era Planckian} (SP): yaitu fase pertama yang kembali Hermitian 
+dan stabil secara spektral. Era SP merupakan jembatan antara dinamika 
+informasi pra-geometrik dan era emergen (SE) yang menghasilkan geometri 
+kontinu dan, kelak, persamaan Einstein.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Pemulihan Hermiticity}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Perturbasi antisimetri $K_{\rm skew}$ yang menjadi ciri era WHI 
+meluruh eksponensial:
+\begin{equation}
+    \varepsilon(t) \longrightarrow 0,
+\end{equation}
+sehingga operator informasional kembali berbentuk Hermitian murni:
+\begin{equation}
+    L_I^{(\mathrm{SP})} = 3I - \frac{2}{3}A,
+    \label{eq:LISP}
+\end{equation}
+dengan $A = A^{T}$ \, adjacency matrix dari graf Ramanujan--Idris RJI--$N$ 
+(berderajat $3$ dan memenuhi batas Ramanujan).
+
+Spektrum operator $L_I^{(\mathrm{SP})}$ adalah real dan non-negatif:
+\begin{equation}
+    0 = \lambda_0 < \lambda_1 \le \cdots \le \lambda_{N-1},
+\end{equation}
+dan mode nol $\psi_0$ mempertahankan interpretasi sebagai arah waktu 
+yang telah “dibekukan” selama transisi WHI.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Dinamika Mode Informasi}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Setelah pemulihan Hermiticity, dinamika efektif mode informasional 
+dikendalikan oleh persamaan evolusi linear:
+\begin{equation}
+    \dot{\psi}_k(t) = - \lambda_k \, \psi_k(t),
+    \qquad k \ge 1.
+    \label{eq:psiSP}
+\end{equation}
+
+Solusi umum:
+\begin{equation}
+    \psi_k(t) = \psi_k(0)\, e^{-\lambda_k t}.
+\end{equation}
+
+Karakteristiknya:
+\begin{itemize}
+    \item Mode rendah ($\lambda_k$ kecil) meluruh lambat dan menentukan struktur 
+    geometri emergen (era SE).
+    \item Mode tinggi ($\lambda_k$ besar) meluruh cepat dan menyumbang fluktuasi 
+    energi awal (analisis penuh pada Bab XVII–XX).
+    \item Mode nol $\psi_0$ bersifat konstan dan berperan sebagai arah waktu 
+    makroskopik.
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Metrik Spektral Awal}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Pada era SP, struktur geometri mulai muncul melalui embedding spektral 
+mode non-nol:
+\begin{equation}
+    g_{\mu\nu}^{\mathrm{(SP)}}(x) =
+    \sum_{k\ge 1}
+    \lambda_k^{-1}
+    \left(
+    \partial_\mu \psi_k(x)
+    \right)
+    \left(
+    \partial_\nu \psi_k(x)
+    \right).
+    \label{eq:gSP}
+\end{equation}
+
+Sifat-sifat:
+\begin{enumerate}
+    \item \textbf{Tanda Lorentzian}:  
+    arah waktu telah ditentukan saat WHI melalui mode nol imajiner 
+    $\lambda_0 \to i\varepsilon$, sehingga tanda metrik efektif adalah $(-,+,+,+)$.
+    \item \textbf{Dimensi efektif empat}:  
+    dimensi spektral RJI--$N$ adalah $d_s \approx 4$ 
+    (Bab II), sehingga limit kontinuum menghasilkan ruang-waktu 
+    empat dimensi.
+    \item \textbf{Diskrit $\to$ kontinu}:  
+    pada limit $N\to\infty$, metrik spektral~(\ref{eq:gSP}) 
+    menjadi metrik smooth pada manifold kontinu empat dimensi.
+\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Transisi SP ke Era Emergen (SE)}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Transisi dari era SP menuju era emergent (SE) terjadi ketika:
+\begin{enumerate}
+    \item $N$ cukup besar sehingga limit kontinuum dapat diambil;
+    \item mode rendah mendominasi dinamika global;
+    \item kontribusi mode tinggi menjadi energi fluktuatif teredam;
+    \item metrik spektral~(\ref{eq:gSP}) menjadi smooth dan 
+          kompatibel dengan struktur manifold.
+\end{enumerate}
+
+Pada kondisi ini, geometri spektral RJI--$N$ memasuki 
+regime di mana persamaan Einstein muncul sebagai batas kontinum.  
+Bukti lengkap derivasi Einstein–Idris disajikan pada 
+Bab X–XI dan Lampiran D.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Kesimpulan}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Era Planckian (SP) merupakan fase awal stabil pasca-transisi WHI dan 
+menjadi fondasi geometri emergen. Ciri utamanya:
+\begin{itemize}
+    \item operator kembali Hermitian,
+    \item dinamika mode informasional eksponensial,
+    \item pembentukan awal metrik spektral Lorentzian,
+    \item persiapan transisi menuju geometri kontinuum (SE),
+    \item tanpa membuat klaim kosmologis prematur (energi gelap, dark matter, atau 
+          persamaan Einstein eksplisit).
+\end{itemize}
+
+Bab berikutnya menguraikan secara rinci era emergen (SE), termasuk 
+bagaimana geometri kontinu sepenuhnya muncul dari struktur informasional 
+RJI--$N$ dan bagaimana limit kontinuum menghasilkan persamaan Einstein 
+sebagai teori efektif makroskopik.

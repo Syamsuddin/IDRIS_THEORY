@@ -1,0 +1,233 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% BAB XXI — DINAMIKA IDE DAN NILAI w_IDE
+% Teori Idris — Versi LaTeX Lengkap
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter[Dinamika Energi Gelap Idrissian]{Dinamika Energi Gelap Idrissian dan Penurunan Nilai \texorpdfstring{$w_{\rm IDE}$}{w\_IDE}}
+\label{chap:IDE-dynamics}
+
+Energi Gelap Idrissian (IDE) muncul langsung dari mode-mode informasi
+dengan nilai eigen $\lambda > 1.2$ pada operator informasi
+\begin{equation}
+L_I = 3I - \frac{2}{3}A.
+\label{eq:LI-def-IDE}
+\end{equation}
+IDE bukanlah medan tambahan atau parameter kosmologis ad-hoc.
+Bab ini menurunkan dinamika IDE, karakter tekanan-negatifnya, 
+nilai $w_{\rm IDE}$, dan prediksi waktu Kiamat Idrissian.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{IDE sebagai Mode Spektral Tinggi}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Setiap mode eigen $L_I$ dengan $\lambda_k > 1.2$ berkontribusi pada 
+densitas energi efektif:
+\begin{equation}
+\rho_k = \frac{1}{2}\lambda_k |c_k|^2.
+\label{eq:rho-k-IDE}
+\end{equation}
+
+Total energi gelap:
+\begin{equation}
+\rho_{\rm IDE}
+=
+\sum_{\lambda_k > 1.2}
+\frac{1}{2}\lambda_k |c_k|^2.
+\label{eq:rho-IDE}
+\end{equation}
+
+Evolusi mode dikendalikan oleh aliran IRG:
+\begin{equation}
+\frac{dc_k}{d\tau}=-\lambda_k c_k,
+\qquad
+c_k(\tau)=c_k(0)e^{-\lambda_k\tau}.
+\label{eq:IRG-evol}
+\end{equation}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Peran Mode Tinggi dalam Geometri}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Metrik emergen ruang-waktu berasal dari embedding spektral:
+\begin{equation}
+g_{\mu\nu}(x)
+=
+\sum_{\lambda_k \le K}
+\lambda_k^{-1}
+\partial_\mu\psi_k(x)\,
+\partial_\nu\psi_k(x).
+\label{eq:metric-embed}
+\end{equation}
+
+Mode dengan $\lambda > 1.2$ menghasilkan tekanan efektif negatif,
+karena kontribusi ruang dan waktunya memiliki tanda berlawanan
+dalam Lagrangian efektif:
+\begin{equation}
+\mathcal{L}_{\rm IDE}
+\sim
+\sum_{\lambda>1.2}
+\left(
+\lambda^{-1}(\partial\psi)^2
+-
+\lambda|c|^2
+\right).
+\label{eq:L-IDE}
+\end{equation}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Rumus Tekanan dan Energi IDE}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Definisi:
+\begin{equation}
+p_{\rm IDE} = -\frac{\partial\mathcal{L}}{\partial g_{ii}},
+\qquad
+\rho_{\rm IDE} = \frac{\partial\mathcal{L}}{\partial g_{00}}.
+\label{eq:IDE-p-rho}
+\end{equation}
+
+Dari (\ref{eq:L-IDE}), diperoleh struktur umum keadaan:
+\begin{equation}
+w_{\rm IDE}
+=
+\frac{p_{\rm IDE}}{\rho_{\rm IDE}}
+=
+-1 - \Delta,
+\label{eq:w-IDE}
+\end{equation}
+dengan
+\begin{equation}
+\Delta
+=
+\frac{
+\sum_{\lambda>1.2}
+\lambda^{-1}(\partial\psi)^2
+}{
+\sum_{\lambda>1.2}
+\lambda |c|^2
+}.
+\label{eq:Delta-def}
+\end{equation}
+
+Gradien mode tinggi memenuhi kira-kira:
+\begin{equation}
+(\partial\psi)^2 \sim \lambda,
+\label{eq:grad-lambda}
+\end{equation}
+sehingga:
+\begin{equation}
+\lambda^{-1}(\partial\psi)^2 \sim 1.
+\label{eq:grad-approx}
+\end{equation}
+
+Karena penyebut (\ref{eq:Delta-def}) besar, maka
+\begin{equation}
+\Delta \ll 1,\qquad \Delta > 0.
+\label{eq:Delta-small}
+\end{equation}
+
+Hasil prediksi:
+\begin{equation}
+w_{\rm IDE}
+\simeq
+-1.03 \text{ s.d. } -1.08.
+\label{eq:w-predicted}
+\end{equation}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Solusi Skala Faktor dan Big Rip Spektral}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Untuk $w<-1$, solusi FRW efektif adalah:
+\begin{equation}
+a(t)
+=
+a_0
+\left[
+1 - \frac{3}{2}(1+w)H_0(t-t_0)
+\right]^{
+-\frac{2}{3(1+w)}
+}.
+\label{eq:scale-factor}
+\end{equation}
+
+Kiamat (“Big Rip Idrissian”) terjadi saat tanda kurung sama dengan nol:
+\begin{equation}
+t_{\rm doom} - t_0
+=
+\frac{2}{3|1+w|H_0}.
+\label{eq:t-doom}
+\end{equation}
+
+Dengan
+\begin{equation}
+H_0 \simeq 2.39\times 10^{-18}\ {\rm s}^{-1}
+\label{eq:H0}
+\end{equation}
+dan
+\begin{equation}
+|1+w|=\Delta,
+\label{eq:1+w}
+\end{equation}
+maka:
+\begin{equation}
+t_{\rm doom} - t_0
+\simeq
+\frac{2}{3\Delta}\times 13.3\ {\rm Gyr}.
+\label{eq:t-doom-Gyr}
+\end{equation}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Prediksi Waktu Kiamat Idrissian}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Dengan kisaran $\Delta$:
+\[
+0.03\le\Delta\le0.08,
+\]
+persamaan (\ref{eq:t-doom-Gyr}) memberi:
+
+\begin{align}
+\Delta=0.03 &\Rightarrow t_{\rm doom}-t_0 \simeq 296\ {\rm Gyr}, \\
+\Delta=0.05 &\Rightarrow t_{\rm doom}-t_0 \simeq 177\ {\rm Gyr}, \\
+\Delta=0.08 &\Rightarrow t_{\rm doom}-t_0 \simeq 110\ {\rm Gyr}.
+\end{align}
+
+Prediksi resmi:
+\begin{equation}
+t_{\rm doom}-t_0 \simeq 110\text{--}300\ {\rm Gyr},
+\qquad
+\text{nilai sentral } \sim 180\ {\rm Gyr}.
+\label{eq:doom-final}
+\end{equation}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Kesimpulan Bab}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Kesimpulan Bab XIX}
+
+Bab ini telah:
+
+\begin{itemize}
+    \item Menurunkan dinamika lengkap Energi Gelap Idrissian (IDE) dari 
+          mode-mode spektral tinggi $L_I$
+    \item Membuktikan bahwa IDE memiliki equation of state $w_{\rm IDE} < -1$ 
+          (phantom dark energy) sebagai konsekuensi langsung dari struktur spektral
+    \item Menunjukkan bahwa dinamika phantom ini memaksa ekspansi super-ekspansif 
+          alam semesta
+    \item Memprediksi "Big Rip Spektral" yang akan terjadi sekitar 110--300 
+          milyar tahun dari sekarang (nilai sentral $\sim$ 180 Gyr)
+\end{itemize}
+
+Energi Gelap Idrissian bukan konstanta kosmologis statis, melainkan memiliki 
+dinamika phantom yang akan mengakhiri alam semesta dalam Big Rip Spektral.
+
+\textbf{Keterkaitan dengan Bab Berikutnya:}
+
+Bab XX akan membahas falsifikasi Teori Idris — yaitu bagaimana teori ini dapat 
+diuji, diverifikasi, atau dibantah secara matematis maupun eksperimental. 
+Bab XX akan dengan jujur memaparkan limitasi matematis teori, titik-titik rentan 
+yang dapat mematahkan teori, dan kriteria eksperimental yang dapat memfalsifikasi 
+prediksi-prediksi Teori Idris. Ini adalah bukti bahwa Teori Idris adalah teori 
+saintifik yang dapat diuji, bukan spekulasi filosofis.

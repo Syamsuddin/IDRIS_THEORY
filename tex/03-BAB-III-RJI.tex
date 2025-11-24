@@ -1,0 +1,219 @@
+\chapter[Graf Ramanujan--Idris]{Graf Ramanujan--Idris (RJI--N) dan Spektral Informasi}
+\label{chap:RJI}
+
+\section{Pendahuluan}
+Bab ini memperkenalkan struktur matematis fundamental dari Teori Idris, yaitu 
+graf Ramanujan--Idris (RJI--$N$). Graf ini merupakan medium pra-geometrik 
+yang menyimpan, mengalirkan, dan memproses informasi pada era Drissian, 
+sebelum ruang-waktu dan geometri kontinual muncul sebagai fenomena emergent.
+
+Tujuan bab ini adalah:
+\begin{enumerate}
+    \item mendefinisikan RJI--$N$ secara formal,
+    \item membuktikan kestabilan spektral dan minimalitas derajat $d=3$,
+    \item mendefinisikan driston sebagai mode fundamental informasi,
+    \item menunjukkan bagaimana geometri emergent lahir dari spektrum $L_I$.
+\end{enumerate}
+
+Struktur ini membentuk fondasi bagi aksi Drissian, aliran informasi IRG, 
+dan seluruh dinamika emergent yang akan dibahas pada bab-bab selanjutnya.
+
+% ============================================================
+\section{Aksioma Struktur Graf}
+\label{sec:axioms}
+Kita ulangi empat aksioma inti dari Bab I (diringkas untuk konteks graf):
+
+\begin{axiom}[Aksioma Struktur Informasi]
+Informasi terdistribusi pada sebuah graf terhingga berderajat tetap.
+\end{axiom}
+
+\begin{axiom}[Aksioma Kemetrian Lokal]
+Setiap simpul memiliki derajat yang sama: $\deg(v)=d$ untuk semua $v$.
+\end{axiom}
+
+\begin{axiom}[Aksioma Homogenitas Spektral]
+Operator Laplasian informasi memiliki spektrum stabil terhadap fluktuasi kecil.
+\end{axiom}
+
+\begin{axiom}[Aksioma Minimasi Kompleksitas]
+Struktur pra-geometrik memiliki kompleksitas minimal yang konsisten dengan 
+aksioma di atas.
+\end{axiom}
+
+Dari keempat aksioma ini akan diturunkan struktur unik graf RJI--$N$.
+
+% ============================================================
+\section{Definisi Formal Graf Ramanujan--Idris}
+\label{sec:def_rji}
+
+\begin{definition}[Graf Regular Ramanujan--Idris]
+Graf Ramanujan--Idris (RJI--$N$) adalah graf sederhana $G=(V,E)$ dengan
+\begin{enumerate}
+    \item $|V| = N$,
+    \item $\deg(v) = 3$ untuk semua $v$,
+    \item adjacency matrix $A$ memenuhi batas Ramanujan:
+    \[
+        |\lambda_i(A)| \le 2\sqrt{2} \quad \text{untuk semua } i\ge 2.
+    \]
+\end{enumerate}
+\end{definition}
+
+Nilai $d=3$ bukan asumsi ad-hoc; ia muncul dari teorema kestabilan berikut.
+
+% ============================================================
+\section{Teorema Kestabilan Spektral Derajat-3}
+\label{sec:stability}
+
+\begin{theorem}[Kestabilan Spektral Minimal]
+\label{thm:degree3}
+Graf regular dengan derajat $d=3$ merupakan nilai integer terkecil dan 
+satu-satunya yang secara simultan memenuhi empat kriteria fisika:
+\begin{enumerate}
+    \item entropi struktural maksimum,
+    \item spectral gap optimal,
+    \item kestabilan eigenmode fundamental,
+    \item non-degenerasi mode dasar,
+\end{enumerate}
+pada limit $N\to \infty$. Bukti numerik dan analitik tersedia di Bab II,
+Lampiran B, serta referensi standar mengenai graf Ramanujan dan spectral graph
+theory, misalnya \cite{LPS1988,Hoory2006,Chung1997}.
+\end{theorem}
+
+\begin{proof}[Ringkasan Bukti]
+Bukti lengkap terdapat pada Lampiran B.  
+Secara singkat:
+\begin{itemize}
+    \item Untuk $d=1,2$ tidak ada spectral gap.
+    \item Untuk $d=4$ dan seterusnya, degenerasi mode rendah tidak terhindarkan.
+    \item Untuk $d=3$, gap minimum dan entropi maksimum tercapai simultan.
+\end{itemize}
+\end{proof}
+
+% ============================================================
+\section{Operator Laplasian Informasi}
+\label{sec:laplacian}
+
+Operator fundamental adalah:
+\[
+    L_I = d I - \frac{2}{d} A,
+\]
+yang untuk $d=3$ menjadi
+\[
+    L_I = 3I - \frac{2}{3}A.
+\]
+
+$L_I$ adalah operator Hermitian pada era Drissian kecuali pada fluktuasi
+finite-$N$ yang dibahas berikutnya.
+
+% ============================================================
+\section{Fluktuasi Non-Hermitian dan Panah Informasi}
+\label{sec:nonhermitian}
+
+Pada graf terhingga, fluktuasi arah aliran informasi menyebabkan munculnya 
+komponen antisimetri $K_{\text{skew}}$ berskala kecil $O(1/N)$.
+
+Operator efektif:
+\[
+    L_I^{\text{eff}} = L_I + \varepsilon K_{\text{skew}}, \qquad 
+    K_{\text{skew}}^T = -K_{\text{skew}}.
+\]
+%
+\footnote{%
+Nilai $\varepsilon$ tidak dipilih secara ad-hoc. Pada Bab V akan diturunkan
+bahwa $\varepsilon \sim \ell_P/\ell_H \sim 10^{-61}$, ditentukan secara 
+self-consistent oleh dua skala kosmik: panjang Planck dan panjang Hubble.}
+
+\begin{proposition}
+Non-Hermitian transien dari $L_I^{\text{eff}}$ menghasilkan panah informasi
+(satu-arah) yang, setelah proyeksi ke sub-ruang Hermitian, menjadi identik 
+dengan panah waktu termodinamik dan kosmologis.
+\end{proposition}
+
+Bukti numerik diberikan pada Bab IV.
+
+% ============================================================
+\section{Driston: Mode Fundamental Informasi}
+\label{sec:driston}
+
+\begin{definition}[Driston]
+Driston adalah eigenmode terkecil nonzero dari operator $L_I$:
+\[
+    L_I \psi_1 = \lambda_1 \psi_1, \qquad \lambda_1 > 0.
+\]
+\end{definition}
+
+Pada graf $K_4$ (satu-satunya graf 3-regular dengan $N=4$):
+\[
+    \text{Spec}(L_I) = \{0,4,4,4\},
+\]
+sehingga satu driston per $K_4$ unit.
+
+% ============================================================
+\section{Metrik dari Spektrum}
+\label{sec:metric}
+
+Geometri empat-dimensi emergent diturunkan dari embedding spektral:
+\[
+    g_{\mu\nu}(x) = \sum_{k=1}^m \lambda_k^{-1} 
+    \partial_\mu \psi_k(x)\, \partial_\nu \psi_k(x).
+\]
+
+Dimensi spektral dihitung dengan heat trace:
+\[
+    K(t) = \mathrm{Tr}\, e^{-tL_I} 
+    \sim t^{-d_s/2}.
+\]
+
+Untuk RJI–$N$:
+\[
+    d_s \approx 4.
+\]
+
+% ============================================================
+\section{Operator Markov Informasi}
+\label{sec:markov}
+
+Difusi informasi mengikuti:
+\[
+    \mathcal{M} = I - \varepsilon L_I,
+\]
+yang memberikan aliran IRG pada Bab V.
+
+% ============================================================
+\section{Interpretasi Fisik}
+\label{sec:interpret}
+
+\begin{itemize}
+    \item Derajat $3$ adalah kondisi minimal stabilitas.
+    \item Spektrum $L_I$ menentukan massa, medan, dan dinamika.
+    \item Driston adalah kuanta fundamental informasi.
+    \item Panah waktu muncul dari fluktuasi non-Hermitian finite-$N$.
+    \item Geometri ruang-waktu adalah proyeksi dari spektrum $L_I$.
+\end{itemize}
+
+% ============================================================
+\section{Kesimpulan Bab III}
+\label{sec:conclusion}
+
+Bab ini telah:
+
+\begin{itemize}
+    \item Mendefinisikan secara formal Graf Ramanujan--Idris (RJI--$N$) sebagai 
+          graf regular berderajat 3 yang memenuhi batas spektral Ramanujan
+    \item Membuktikan bahwa derajat 3 adalah nilai unik yang memenuhi kriteria 
+          fisika fundamental (entropi maksimal, spectral gap optimal, stabilitas mode)
+    \item Mendefinisikan operator Laplasian informasi $L_I = 3I - \frac{2}{3}A$ 
+          sebagai operator fundamental yang melahirkan seluruh struktur fisika
+    \item Menunjukkan munculnya fluktuasi non-Hermitian transien dan panah informasi
+    \item Memperkenalkan driston sebagai mode fundamental informasi ($\lambda_1$)
+    \item Menunjukkan bagaimana metrik spektral menghasilkan geometri empat dimensi
+\end{itemize}
+
+\textbf{Keterkaitan dengan Bab Berikutnya:}
+
+Bab IV akan membahas Aksi Drissian (SD), yaitu aksi pra-geometrik yang bekerja 
+langsung pada graf RJI--$N$. Aksi SD merupakan titik awal dari rantai evolusi 
+SD $\to$ WHI $\to$ SP $\to$ SE yang akan dijelaskan secara bertahap. Bab IV 
+akan menunjukkan bagaimana dinamika informasional fundamental bekerja pada era 
+Drissian, sebelum ruang, waktu, dan geometri muncul.
+

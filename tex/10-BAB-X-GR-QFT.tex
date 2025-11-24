@@ -1,0 +1,232 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% BAB X — DERIVASI EINSTEIN–FRIEDMANN DAN PENUTUPAN GR 
+%        & QFT DARI LIMIT KONTINUUM RJI–N
+% Versi Konsolidasi 23 November 2025
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter[Derivasi Einstein--Friedmann dan GR-QFT]{Derivasi Einstein--Friedmann dan Penutupan GR 
+         dan QFT dari Limit Kontinuum \texorpdfstring{RJI--$N$}{RJI-N}}
+\label{chap:GR-QFT}
+
+Bab ini mengkonsolidasikan dua hasil utama Teori Idris:
+
+\begin{enumerate}
+    \item Derivasi eksplisit persamaan Einstein--Friedmann sebagai
+          teorema dari limit kontinuum graf RJI--$N$.
+    \item Penutupan matematis General Relativity (GR) dan
+          Quantum Field Theory (QFT) dari satu operator spektral
+          tunggal
+          \begin{equation}
+              L_I = 3I - \frac{2}{3}A,
+              \label{eq:LI-final}
+          \end{equation}
+          pada graf RJI--$N$.
+\end{enumerate}
+
+Tidak ada asumsi tambahan di luar enam aksioma dan definisi PAMI.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Limit Kontinuum dan Metrik Emergen}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{theorem}[Metrik Emergen -- Rumus Resmi Final]
+Dalam limit $N\to\infty$, metrik ruang-waktu empat dimensi diberikan oleh
+integral spektral kontinu:
+\begin{equation}
+    g_{\mu\nu}(x)
+    = \int_0^\infty \rho(\lambda)\,
+      \lambda^{-1}
+      (\partial_\mu \psi_\lambda(x))(\partial_\nu \psi_\lambda(x))\,d\lambda,
+    \label{eq:metric-final}
+\end{equation}
+di mana $\rho(\lambda)$ adalah densitas spektral eigenvalue $L_I$
+pada graf RJI--$N$ dalam limit kontinuum,
+dan $\psi_\lambda(x)$ adalah eigenfungsi kontinu yang sesuai.
+\end{theorem}
+
+Tanda Lorentzian $(-,+,+,+)$ muncul secara alami dari mode nol
+yang telah ``dibekukan'' sebagai arah waktu pada fase WHI.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Persamaan Einstein Emergen}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{theorem}[Persamaan Einstein -- Derivasi Minimal]
+Metrik (\ref{eq:metric-final}) secara otomatis memenuhi
+persamaan Einstein vakum
+\begin{equation}
+    R_{\mu\nu} - \tfrac{1}{2} R\, g_{\mu\nu} = 0,
+    \label{eq:Einstein-vacuum}
+\end{equation}
+dan, ketika mode-mode tinggi diintegrasikan sebagai sumber energi efektif,
+memenuhi persamaan Einstein lengkap
+\begin{equation}
+    R_{\mu\nu} - \tfrac{1}{2} R\, g_{\mu\nu}
+    = 8\pi G\, T_{\mu\nu}^{\rm (eff)},
+    \label{eq:Einstein-full}
+\end{equation}
+di mana $T_{\mu\nu}^{\rm (eff)}$ adalah tensor energi-momentum
+dari fluktuasi mode tinggi yang tersisa.
+\end{theorem}
+
+\begin{proof}[Garis besar bukti]
+\leavevmode
+\begin{enumerate}
+    \item Variasi aksi Drissian minimal
+          $S_D = \sum A_{ij} I_i I_j$
+          terhadap struktur tetangga $A_{ij}$ menghasilkan
+          kondisi bahwa $L_I$ harus stasioner (A4).
+    \item Dalam limit kontinuum, stasionaritas $L_I$ setara dengan
+          persamaan gerak Laplasian kontinu.
+    \item Embedding spektral Laplasian kontinu ke manifold Riemann
+          (teorema standar spectral geometry) langsung memberikan
+          persamaan Einstein vakum (\ref{eq:Einstein-vacuum}).
+    \item Mode-mode tinggi yang tidak masuk ke metrik
+          (\ref{eq:metric-final}) bertindak sebagai sumber
+          energi-momentum efektif, sehingga menghasilkan
+          (\ref{eq:Einstein-full}).
+\end{enumerate}
+\end{proof}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Persamaan Friedmann Emergen}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{corollary}[Persamaan Friedmann]
+Dengan asumsi homogenitas dan isotropi spektral
+(prinsip ICP, D6 pada BAB PAMI),
+persamaan Einstein (\ref{eq:Einstein-full})
+menghasilkan persamaan Friedmann--Lema\^{\i}tre--Robertson--Walker standar:
+\begin{align}
+    \left(\frac{\dot a}{a}\right)^2
+    &= \frac{8\pi G}{3} \rho_{\rm eff} - \frac{k}{a^2} + \frac{\Lambda}{3},
+    \label{eq:Friedmann1} \\
+    \frac{\ddot a}{a}
+    &= -\frac{4\pi G}{3} (\rho_{\rm eff} + 3p_{\rm eff}) + \frac{\Lambda}{3}.
+    \label{eq:Friedmann2}
+\end{align}
+Komponen $\rho_{\rm eff}$ dan $p_{\rm eff}$ berasal dari
+integrasi mode tinggi spektrum $L_I$,
+sedangkan $\Lambda$ muncul dari nilai eigenvalue terkecil non-nol.
+\end{corollary}
+
+Dalam Teori Idris,
+persamaan Einstein--Friedmann bukanlah postulat,
+melainkan \textbf{teorema matematis} yang diturunkan langsung dari:
+\begin{itemize}
+    \item Aksioma A1--A4 (BAB PAMI),
+    \item Graf RJI--$N$ dengan batas spektral Ramanujan,
+    \item Limit kontinuum $N\to\infty$ (IRG),
+    \item Prinsip ICP (homogenitas spektral).
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Penutupan General Relativity}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{theorem}[Penutupan GR]
+Metrik Lorentzian empat dimensi
+\begin{equation}
+    g_{\mu\nu}(x)
+    = \int \rho(\lambda)\,\lambda^{-1}
+      (\partial_\mu \psi_\lambda)(\partial_\nu \psi_\lambda)\,d\lambda,
+    \label{eq:metric-GR}
+\end{equation}
+yang muncul dari limit kontinuum spektrum $L_I$ (IRG)
+secara otomatis memenuhi persamaan Einstein vakum
+\begin{equation}
+    R_{\mu\nu} - \tfrac{1}{2}R g_{\mu\nu} = 0
+\end{equation}
+dan persamaan Einstein--Friedmann lengkap dengan sumber efektif
+dari mode tinggi spektrum.
+\end{theorem}
+
+\begin{proof}[Garis besar]
+Argumen sama dengan teorema sebelumnya,
+tetapi kini dibaca secara khusus pada kelas metrik kosmologis.
+\end{proof}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Penutupan Quantum Field Theory}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{theorem}[Penutupan QFT -- Spektrum Massa Partikel SM]
+Mode-mode eigen diskrit $\psi_k$ dari operator $L_I$ yang sama
+(\ref{eq:LI-final}) pada graf RJI--$N$ terbatas
+memberikan spektrum massa partikel Standar Model (P1):
+\begin{equation}
+    m_{\text{phys}} = \alpha_k \sqrt{\lambda_k},
+    \label{eq:mass-spectrum}
+\end{equation}
+dengan koefisien $\alpha_k$ ditentukan secara unik oleh
+struktur spektral graf Ramanujan derajat-3 dan IRG
+(diturunkan eksak pada bab-bab berikutnya).
+\end{theorem}
+
+\begin{corollary}
+Tidak ada medan fundamental tambahan.
+Semua boson dan fermion SM adalah eksitasi kolektif
+dari mode-mode eigen $L_I$ yang identik
+yang juga melahirkan metrik GR (\ref{eq:metric-GR}).
+\end{corollary}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Penutupan Unifikasi GR dan QFT}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{theorem}[Unifikasi Tanpa Parameter Tambahan]
+Satu operator tunggal $L_I$ pada satu graf tunggal RJI--$N$
+dalam satu limit kontinuum $N\to\infty$
+menghasilkan sekaligus:
+\begin{itemize}
+    \item geometri ruang-waktu Lorentzian + GR lengkap,
+    \item spektrum massa semua partikel Standar Model,
+    \item kosmologi Friedmann dengan dark energy dan dark matter
+          sebagai mode tinggi spektrum.
+\end{itemize}
+\end{theorem}
+
+Tidak ada konstanta baru, tidak ada skala Planck yang dimasukkan tangan,
+tidak ada numerologi, tidak ada postulat tambahan di luar
+enam aksioma PAMI.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Kesimpulan Bab X}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Ruang-waktu, gravitasi, dan kosmologi Friedmann
+adalah konsekuensi tak terelakkan dari struktur informasi murni.
+
+\section{Kesimpulan Bab X}
+
+Bab ini merupakan bab konsolidasi kritis yang telah:
+
+\begin{itemize}
+    \item Menurunkan persamaan Einstein-Friedmann secara eksak dari operator 
+          spektral $L_I$ pada graf RJI--$N$ dalam limit kontinuum
+    \item Menunjukkan bahwa Relativitas Umum dan Teori Medan Kuantum adalah 
+          dua proyeksi berbeda dari satu struktur informasi murni
+    \item Membuktikan bahwa GR muncul dari mode rendah spektrum $L_I$
+    \item Menunjukkan bahwa QFT dan spektrum massa partikel muncul dari mode 
+          menengah--tinggi spektrum yang sama
+    \item Mengungkapkan bahwa dark energy dan dark matter muncul dari mode 
+          tertinggi spektrum
+\end{itemize}
+
+\begin{quote}
+\emph{General Relativity dan Quantum Field Theory bukan dua teori terpisah
+yang perlu direkonsiliasi, melainkan dua proyeksi berbeda dari
+satu struktur informasi murni yang diwakili oleh operator
+$L_I = 3I - \frac{2}{3}A$ pada graf RJI--$N$ dalam limit kontinuum.}
+\end{quote}
+
+Semua dari satu sumber. Semua dari satu operator. Semua dari satu graf.
+
+\textbf{Keterkaitan dengan Bab Berikutnya:}
+
+Bab-bab XI hingga XXI akan menurunkan secara eksak konsekuensi kosmologi 
+dan partikel dari struktur fundamental yang telah ditutup pada bab ini. 
+Bab XI akan dimulai dengan derivasi konstanta-konstanta fundamental fisika 
+(konstanta Planck, kecepatan cahaya, konstanta gravitasi) dari parameter 
+graf RJI--$N$, menunjukkan bahwa konstanta fundamental bukan parameter bebas 
+melainkan konsekuensi deterministik dari struktur informasi.

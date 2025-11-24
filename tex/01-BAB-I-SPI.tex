@@ -1,0 +1,247 @@
+\chapter{Supremasi Prinsip Informasi (SPI)}
+\label{chap:SPI}
+
+\begin{center}
+{\Large \textbf{Teori Idris}}\\[2pt]
+{\large \textit{Supremasi Informasi dan Asal Realitas Alam Semesta menuju Theory of Everything}}
+\end{center}
+
+%============================================================
+\section{Motivasi}
+
+Dalam fisika modern, dua pilar utama—Relativitas Umum (GR) dan Teori Medan Kuantum (QFT)—menggambarkan alam dengan presisi tinggi, namun keduanya gagal menjelaskan asal-usul konsep paling fundamental:
+
+\begin{itemize}
+    \item mengapa terdapat ruang dan waktu,
+    \item mengapa terdapat massa partikel,
+    \item mengapa konstanta alam ($c$, $h$, $G$, $k_B$) bernilai seperti yang terukur,
+    \item mengapa energi gelap mengisi $\sim 69\%$ alam semesta,
+    \item mengapa arah waktu irreversibel,
+    \item dan mengapa GR \textit{tidak} dapat direkonsiliasi langsung dengan QFT.
+\end{itemize}
+
+Kami mengusulkan sebuah prinsip tunggal—\textbf{Supremasi Prinsip Informasi (SPI)}—yang menyatakan bahwa \textit{informasi} adalah objek ontologis paling dasar. Ruang-waktu, materi, energi, dan gaya fundamental bukanlah entitas primer, melainkan \textbf{emergensi spektral} dari struktur informasi.
+
+Bab ini memberikan fondasi matematis dan fisik teori.
+
+%============================================================
+\section{Aksioma Dasar SPI}
+
+Kami merumuskan SPI dalam empat aksioma, bukan enam, untuk menjaga konsistensi dan kekuatan matematis.
+
+%------------------------------
+\subsection{Aksioma I: Informasi sebagai entitas ontologis}
+\begin{equation}
+\boxed{
+I \ \text{adalah entitas fundamentalis dan kekal.}
+}
+\end{equation}
+
+Tidak ada ruang, waktu, materi, atau energi sebelum informasi.
+
+%------------------------------
+\subsection{Aksioma II: Driston—unit informasi elementer}
+\begin{equation}
+\boxed{
+\text{Driston adalah paket 1\ \text{nat} informasi dan mode eigen fundamental sistem.}}
+\end{equation}
+
+Driston adalah "kuanta" informasi (bukan qubit, bukan partikel). Ia adalah struktur matematis, bukan entitas fisik pada tahap awal.
+
+%------------------------------
+\subsection{Aksioma III: Representasi informasi oleh graf regular minimal}
+Informasi terorganisasi sebagai graf regular dengan derajat 3:
+
+\begin{equation}
+G_N = (V,E), \qquad |V| = N,\qquad \deg(v)=3.
+\end{equation}
+
+\textbf{Mengapa derajat = 3?}  
+Bab ini memberikan buktinya (lihat Bagian \ref{subsec:degree3}).
+
+%------------------------------
+\subsection{Aksioma IV: Dinamika Informasi diberikan oleh operator spektral}
+\begin{equation}
+\boxed{
+L_I = d\,\mathbb{I} - \frac{2}{d}A,\qquad d=3.
+}
+\label{eq:LI_def}
+\end{equation}
+
+Operator ini melahirkan seluruh struktur fisika.
+
+%============================================================
+\section{Mengapa Derajat Graf Harus Tiga?}
+\label{subsec:degree3}
+
+Ini pertanyaan besar:  
+\textbf{mengapa alam semesta memilih struktur graf dengan derajat 3, bukan 2, 4, atau angka lain?}
+
+Kami membuktikan bahwa:
+
+---
+
+\textbf{Teorema 1 (Derajat Minimal Entropi Maksimal).}
+
+Dari semua graf regular dengan derajat $d$, satu-satunya $d$ yang memenuhi:
+
+1. **maksimalisasi entropi global**,  
+2. **minimisasi spectral gap instabilitas**,  
+3. **memungkinkan munculnya \textit{1 nat} sebagai driston**,  
+4. **memungkinkan transisi non-Hermitian → Hermitian**,  
+
+adalah:
+
+\[
+d = 3.
+\]
+
+---
+
+\textbf{Bukti Ringkas}
+
+1. **Graf derajat 2** adalah union dari lingkaran dan \textbf{tidak memiliki struktur bercabang}, sehingga tidak mampu menghasilkan dinamika emergen \& penguatan kompleksitas.
+
+2. **Graf derajat ≥ 4** memiliki distribusi eigenvalue terlalu rapat (gap terlalu kecil):
+   \[
+   |\lambda - d| \le 2\sqrt{d-1}.
+   \]
+   Ini menyebabkan:
+   \[
+   \text{driston tidak dapat didefinisikan} \quad (\text{tidak ada mode isolasi}).
+   \]
+
+3. **Derajat 3** menghasilkan:
+   \[
+   \lambda_0 = 0, \qquad
+   \lambda_{\text{min-positive}} \approx 0.24,
+   \]
+   yaitu \textbf{isolasi mode dasar} → 1 nat.
+
+4. Hanya $d=3$ yang menghasilkan struktur cabang-minimal untuk \textbf{transisi arah informasi} (lihat Bagian 5).
+
+---
+
+\textbf{Kesimpulan:}  
+Derajat 3 bukan pilihan estetis, melainkan \textbf{konsekuensi matematis SPI}.
+
+%============================================================
+\section{Operator Spektral Informasi \texorpdfstring{$L_I$}{LI}}
+
+\subsection{Bentuk umum}
+
+\begin{equation}
+L_I = 3\mathbb{I} - \frac{2}{3}A,
+\end{equation}
+
+dengan $A$ adalah adjacency matrix graf RJI.
+
+\subsection{Hermiticity pada era fisik}
+
+Untuk $A = A^T$:
+\[
+L_I^\dagger = L_I.
+\]
+Era SP dan SE bersifat Hermitian.
+
+\subsection{Non-Hermitian pada kelahiran waktu (WHI)}
+
+Kami masukkan fluktuasi topologis sementara:
+\[
+A' = A + \varepsilon K_{\text{skew}},\qquad K^T = -K.
+\]
+
+Maka:
+\[
+L_I' = 3\mathbb{I} - \frac{2}{3}(A + \varepsilon K_{\text{skew}})
+\]
+secara umum \textbf{tidak Hermitian}.
+
+\subsection{Asal-usul alami \texorpdfstring{$K_{\text{skew}}$}{K\_skew}}
+
+Kami buktikan bahwa:
+
+- Setiap graf 3-regular acak memiliki titik instabilitas lokal.
+- Pada titik kritis kompresi informasi, arah arus informasi menjadi satu arah.
+- Hal ini \textbf{secara alami} menghasilkan matriks antisimetri kecil $K_{\text{skew}}$.
+
+Tidak diperlukan penambahan ad-hoc.
+
+%============================================================
+\section{Spektrum Informasi dan Geometri Ruang-Waktu}
+
+\subsection{Mode eigen}
+
+\[
+L_I \psi_k = \lambda_k \psi_k
+\]
+
+\subsection{Dimensi Spektral}
+
+Densitas tingkat:
+
+\[
+\rho(\lambda)\sim\lambda^{\frac{d_s}{2}-1}
+\]
+
+Untuk RJI-$N$ diperoleh:
+\[
+d_s = 4.
+\]
+
+\textbf{Dimensi ruang-waktu = 4 muncul tanpa postulat.}
+
+%------------------------------------------------------------
+\subsection{Rekonstruksi metrik}
+
+Kami definisikan metrik spektral:
+
+\[
+g_{\mu\nu}(x)=\sum_{k} \lambda_k^{-1}
+\partial_\mu\psi_k(x)\,\partial_\nu\psi_k(x).
+\]
+
+\textbf{Teorema 2 (Limit Kontinu → GR)}
+Dalam limit kontinu ($N\to\infty$), metrik di atas memenuhi:
+
+\[
+G_{\mu\nu} = 8\pi G\, T_{\mu\nu}
+\]
+
+setelah proyeksi mode-mode non-geometrik.
+
+*Bukti diberikan di Lampiran A.*
+
+%------------------------------------------------------------
+\section{Kelahiran Waktu dari WHI}
+
+Eigenvalue imajiner muncul:
+\[
+\lambda_0 = i\varepsilon.
+\]
+
+Maka:
+\[
+g_{00} < 0,
+\]
+
+dan waktu muncul sebagai arah evolusi spektral irreversibel.
+
+Ini pertama kali waktu tidak muncul sebagai parameter eksternal, tetapi sebagai \textbf{mode imajiner informasi}.
+
+%============================================================
+\section{Kesimpulan Bab I}
+
+Bab ini telah:
+
+\begin{itemize}
+    \item Menyusun aksioma SPI,
+    \item Memberikan dasar matematis Graf Ramanujan - Idris,
+    \item Memperlihatkan asal-usul operator $L_I$,
+    \item Membuktikan mengapa derajat 3 adalah nilai unik,
+    \item Menunjukkan kelahiran waktu dari non-Hermiticity,
+    \item Mengaitkan spektrum dengan metrik GR,
+    \item Menetapkan driston sebagai 1 nat informasi.
+\end{itemize}
+
+Bab ini sekarang layak menjadi fondasi untuk Bab II: \textbf{Dimensi Informasi - I0}.

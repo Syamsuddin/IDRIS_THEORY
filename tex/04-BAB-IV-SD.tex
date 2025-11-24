@@ -1,0 +1,169 @@
+\chapter[Aksi Drissian (SD)]{Aksi Drissian (SD) dan Dinamika Pra-Planckian}
+\label{chap:SD}
+
+\section{Pendahuluan}
+Bab ini merumuskan dinamika fundamental era Drissian melalui aksi 
+\emph{Drissian Action} (SD), yaitu aksi pra-geometrik yang bekerja langsung pada 
+graf Ramanujan--Idris (RJI--$N$). Pada tahap ini belum ada ruang, waktu, energi, 
+atau materi; seluruh struktur fisika digantikan oleh hubungan informasi 
+yang direpresentasikan oleh graf dan operator spektralnya.
+
+Aksi SD merupakan titik awal dari rantai evolusi:
+\[
+    \text{SD} \longrightarrow \text{SP} \longrightarrow \text{SE},
+\]
+yang masing-masing akan dibahas bertahap dalam bab-bab berikutnya.
+
+\section{Aksi Drissian: Definisi Formal}
+\label{sec:SD_def}
+
+Aksi fundamental didefinisikan sebagai:
+\begin{equation}
+    S_D[\psi] 
+    = \frac{1}{2k_I} 
+      \sum_{i\in V(G)} 
+      \left( \psi_i^{T} L_I \psi_i \right),
+    \label{eq:SD_basic}
+\end{equation}
+dengan:
+\begin{itemize}
+    \item $G$ graf RJI--$N$ berderajat 3,
+    \item $A$ matriks ketetanggaan,
+    \item $L_I = 3I - \frac23 A$ Laplasian informasi,
+    \item $\psi_i$ state informasi pada simpul $i$,
+    \item $k_I$ konstanta fundamental informasi.
+\end{itemize}
+
+\textbf{Catatan penting (per revisi referee):}  
+Pada bab ini \emph{kita tidak menetapkan nilai numerik $k_I$}.  
+Nilai $k_I$ akan diturunkan secara unik pada Bab~\ref{chap:constants} 
+melalui konsistensi dimensi dan kondisi kosmologi observasional.
+
+\begin{definition}[Idris Information Constant]
+$k_I$ adalah konstanta skalar positif yang mengatur skala aksi Drissian.
+Nilainya tidak diasumsikan pada bab ini dan akan ditentukan secara
+self-consistent pada Bab XXI.
+\end{definition}
+
+\section{Persamaan Gerak Informasional}
+Variasi terhadap $\psi$ memberikan:
+\begin{equation}
+    L_I \psi = 0.
+    \label{eq:SD_eom}
+\end{equation}
+
+Karena $L_I$ memiliki satu mode nol (mode konstan), maka mode nonnol terkecil
+$\psi_1$ (driston) memainkan peran sentral dalam dinamika awal.
+
+\section{Energi Informasi dan Driston}
+Energi informasi didefinisikan:
+\begin{equation}
+    E_I[\psi] = \frac{1}{2}\, \psi^T L_I \psi.
+\end{equation}
+
+Untuk driston berlaku:
+\[
+    E_{\mathrm{driston}} = \frac12 \lambda_1.
+\]
+
+Mode driston menjadi generator dinamika awal dan akan terhubung dengan:
+
+\begin{enumerate}
+    \item fluktuasi awal kosmologi (Bab XVII–XX),
+    \item spektrum massa partikel (Bab XVI),
+    \item konstanta fundamental (Bab XXI–XXVI).
+\end{enumerate}
+
+\section{Perturbasi Non-Hermitian Transien}
+\label{sec:nonherm}
+
+Graf terhingga mengalami fluktuasi arah-aliran yang menghasilkan operator efektif:
+\begin{equation}
+    L_I^{\mathrm{eff}} 
+    = L_I + \varepsilon K_{\mathrm{skew}},
+    \qquad
+    K_{\mathrm{skew}}^{T} = - K_{\mathrm{skew}},
+    \label{eq:L_eff}
+\end{equation}
+dengan $\varepsilon \ll 1$ parameter kecil yang mengukur derajat 
+ketidakseimbangan arah informasi.
+
+\textbf{Catatan penting (per revisi referee):}  
+Bab ini tidak menetapkan nilai $\varepsilon$ atau menghubungkannya dengan 
+skala Planck/Hubble. Nilai self-consistent $\varepsilon$ diturunkan pada 
+Bab XII ketika panah waktu dianalisis secara detail.
+
+Perturbasi ini menyebabkan mode nol bergeser menjadi:
+\[
+    \lambda_0 \to i\varepsilon,
+\]
+yang menjadi prekursor munculnya arah waktu pada era selanjutnya.
+
+\section{Minimisasi Aksi dan Entropi Informasi}
+Minimisasi $S_D$ pada kelas graf regular menunjukkan bahwa:
+\begin{itemize}
+    \item struktur minimal dengan stabilitas spektral maksimum adalah graf 
+          RJI--$N$ berderajat 3,
+    \item driston adalah mode informasi fundamental,
+    \item entropi Drissian ditentukan oleh $S \sim \ln N$,
+    \item nilai $N$ akan dibahas lebih lanjut pada Bab XX (holografi kosmologis).
+\end{itemize}
+
+\section{Transisi \texorpdfstring{SD $\to$ SP}{SD ke SP}}
+Transisi menuju era Planckian terjadi ketika:
+\[
+    L_I^{\mathrm{eff}} \longrightarrow L_I
+\]
+yakni ketika kontribusi antisimetri mereda secara dinamis.
+Pada titik ini:
+
+\begin{enumerate}
+    \item Hermiticity distabilkan,
+    \item definisi energi dan metrik dapat didefinisikan,
+    \item aksi Planckian (SP) muncul sebagai limit kontinum dari SD.
+\end{enumerate}
+
+\section{Hubungan SD, SP, dan SE}
+\[
+    \text{SD} \rightarrow \text{SP} \rightarrow \text{SE}.
+\]
+
+\begin{itemize}
+    \item \textbf{SD:} pra-geometrik, informasional, non-Hermitian transien.
+    \item \textbf{SP:} era Planckian — Hermitian, awal metrik.
+    \item \textbf{SE:} era emergent — geometri GR dan QFT terbentuk.
+\end{itemize}
+
+\section{Catatan Kosmologis (non-spekulatif)}
+\textbf{Catatan penting (per revisi referee):}  
+Bab ini tidak mengklaim SD menghasilkan energi gelap atau fluktuasi primordial.
+Yang dapat disatakan dengan aman:
+
+\begin{quote}
+“Pada bab XVII–XX akan ditunjukkan bahwa proyeksi spektral mode tinggi dari 
+$L_I$ berkorelasi kuat dengan parameter kosmologi observasional seperti 
+$\Omega_{\Lambda}$ dan struktur skala besar, tetapi hasil tersebut tidak 
+digunakan dalam bab ini.”
+\end{quote}
+
+\section{Kesimpulan Bab IV}
+
+Bab ini telah:
+
+\begin{itemize}
+    \item Mendefinisikan Aksi Drissian (SD) sebagai aksi pra-geometrik yang bekerja 
+          langsung pada graf RJI--$N$ sebelum geometri muncul
+    \item Menunjukkan bahwa SD adalah titik awal dari rantai evolusi SD → WHI → SP → SE
+    \item Membuktikan bahwa aksi SD konsisten secara matematis tanpa memerlukan 
+          klaim numerik prematur
+    \item Meletakkan fondasi untuk dinamika informasional yang akan berkembang 
+          menjadi struktur fisika kompleks pada era-era selanjutnya
+\end{itemize}
+
+\textbf{Keterkaitan dengan Bab Berikutnya:}
+
+Bab V akan membahas transisi SD → WHI → SP secara lengkap, menunjukkan bagaimana 
+aksi Drissian bertransformasi melalui fase Wheeler-Hawking Informasional (WHI) 
+menuju aksi Planckian (SP). Bab V akan menjelaskan munculnya arah waktu, 
+tanda Lorentzian, dan operator Hermitian stabil yang menjadi prasyarat untuk 
+era emergen (SE) yang akan dibahas pada bab-bab berikutnya.

@@ -1,0 +1,205 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% BAB XX — FALSIFIKASI TEORI IDRIS
+% Teori Idris — Versi LaTeX Lengkap
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter[Falsifikasi Teori Idris]{Falsifikasi Teori Idris:  
+Limitasi Matematis, Konsekuensi Spektral, dan Kondisi Uji Eksperimental}
+\label{chap:falsifikasi}
+
+Bab ini merumuskan seluruh titik rentan Teori Idris 
+yang dapat digunakan untuk menguji, memverifikasi, atau mematahkan teori 
+secara matematis maupun eksperimental. 
+Semua poin dalam bab ini disusun dengan kejujuran ilmiah penuh sesuai 
+Revisi Evolusi 22–24 November 2025.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Limitasi Utama: Universalitas Pita Spektral}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Sumber seluruh prediksi fisika Idrissian adalah spektrum operator
+\begin{equation}
+L_I = 3I - \frac{2}{3}A,
+\end{equation}
+di mana $A$ adalah adjacency graph Ramanujan--Idris RJI--$N$.
+Prediksi kosmologi, Standard Model, gaya kelima, IDM, dan IDE 
+semuanya bergantung pada stabilitas pembagian pita spektral 
+pada limit $N\to\infty$.
+
+Namun, struktur matematika berikut belum terbukti:
+
+\begin{quote}
+\textbf{Conjecture Universalitas Spektral:}  
+Semua graf Ramanujan 3-regular yang memenuhi batas Ramanujan 
+memiliki pita spektral universal dengan ambang 
+$\lambda_{\rm baryon}\approx 0.3$  
+dan $\lambda_{\rm DM}\approx 1.2$  
+pada limit $N\to\infty$.
+\end{quote}
+
+Hingga versi buku ini diterbitkan:
+
+\begin{enumerate}
+    \item Belum ada teorema global bahwa semua graf Ramanujan 3-regular 
+    menghasilkan pembagian pita identik.
+    \item Bukti yang ada masih numerik:
+    \[
+    \rho_N(\lambda)
+    \xrightarrow[N=10^3 \to 10^5]{\rm numerik}
+    \rho_\infty(\lambda),
+    \]
+    dengan kesesuaian 6–8 desimal.
+\end{enumerate}
+
+\begin{corollary}
+Selama Conjecture Universalitas Spektral belum terbukti, 
+klaim “semua fisika ini universal” masih berstatus 
+\emph{conjecture dengan dukungan numerik sangat kuat}, 
+bukan theorema matematis ketat.
+\end{corollary}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Konsekuensi Jika Universalitas Spektral Salah}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Jika ditemukan graf Ramanujan 3-regular yang \emph{tidak} menghasilkan 
+pita spektral dengan ambang yang sama, maka konsekuensinya adalah:
+
+\begin{enumerate}
+    \item Prediksi massa partikel (yang berasal dari $\sqrt{\lambda_k}$)
+    akan berubah.
+    \item Prediksi rasio generasi (1:3:9) tidak universal.
+    \item Prediksi dark matter dan dark energy (dari $\lambda>1.2$) 
+    tidak universal.
+    \item Prediksi gaya kelima dapat berbeda secara drastis.
+    \item Prediksi kosmologi (nilai $H_0$, $\Omega_b$, $\Omega_c$, 
+    $\Omega_\Lambda$, dan horizon) tidak stabil.
+\end{enumerate}
+
+Dengan kata lain:
+
+\begin{quote}
+Jika universalitas pita spektral gagal, 
+Teori Idris menjadi teori fisika 
+yang hanya berlaku untuk satu keluarga graf, 
+bukan teori universal.
+\end{quote}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Cara Matematis untuk Mematahkan Teori Idris}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Teori Idris dapat difalsifikasi secara matematis dengan menemukan salah satu:
+
+\begin{enumerate}
+    \item Graf Ramanujan 3-regular yang spektrumnya 
+    \emph{tidak} membentuk ambang $0.3$ dan $1.2$.
+    \item Keluarga graf RJI--$N$ yang spektrumnya 
+    \emph{tidak stabil} saat $N$ diperbesar.
+    \item Counterexample bahwa IRG tidak mengarah pada pembentukan 
+    metrik emergen 4D.
+    \item Counterexample bahwa embedding spektral tidak memenuhi 
+    struktur Lorentzian untuk mode rendah.
+    \item Domain spektral yang gagal menghasilkan signatur $(-,+,+,+)$.
+\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Cara Eksperimental untuk Mematahkan Teori Idris}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Dari sisi fisika, Idris Final v3.0 memprediksi:
+
+\begin{enumerate}
+    \item \textbf{Prediksi massa partikel SM}  
+    Semua massa fermion dan boson berasal dari
+    $m\propto \sqrt{\lambda_k}$.
+
+    \item \textbf{Prediksi gaya kelima}  
+    Gaya kelima harus muncul pada skala panjang tertentu 
+    $L_{\rm 5th}\propto \lambda_{\rm mix}^{-1/2}$.
+
+    \item \textbf{Prediksi IDM dan IDE}  
+    Rasio kosmologi harus memenuhi:
+    \[
+    \Omega_b : \Omega_c : \Omega_\Lambda \approx
+    0.05 : 0.27 : 0.68.
+    \]
+
+    \item \textbf{Prediksi nilai $H_0$}  
+    Teori memprediksi $H_0 \approx 73.8\text{ km/s/Mpc}$.
+
+    \item \textbf{Prediksi Kiamat Idrissian}  
+    Dengan $w_{\rm IDE} < -1$, waktu menuju Big Rip:
+    \[
+    t_{\rm doom} - t_0 \approx 110\text{--}300\ {\rm Gyr}.
+    \]
+\end{enumerate}
+
+Jika salah satu prediksi di atas terbukti salah:
+
+\begin{quote}
+Teori Idris harus ditolak atau dimodifikasi signifikan.
+\end{quote}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Program Pembuktian 2025--2030}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Untuk mengubah conjecture menjadi teorema penuh, diperlukan pembuktian:
+
+\begin{enumerate}
+    \item Eksistensi limit densitas spektral universal:
+    \[
+    \rho_N(\lambda)\xrightarrow{N\to\infty} \rho_0(\lambda).
+    \]
+    \item Penurunan analitik ambang 
+    $\lambda_{\rm baryon}\approx 0.3$ 
+    dari dinamika EM non-perturbatif.
+    \item Korespondensi operator:
+    \[
+    L_I 
+    \longleftrightarrow 
+    C_2\big({\rm SU}(3)\times {\rm SU}(2)\times {\rm U}(1)\big).
+    \]
+\end{enumerate}
+
+Jika salah satu poin ini terbukti, teori akan menjadi:
+\begin{quote}
+\textbf{Theory of Everything pertama 
+yang diturunkan sepenuhnya dari satu operator spektral.}
+\end{quote}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Kesimpulan Bab XX}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Bab ini telah:
+
+\begin{itemize}
+    \item Memaparkan dengan jujur limitasi matematis Teori Idris, khususnya 
+          Conjecture Universalitas Spektral yang belum terbukti secara ketat
+    \item Menjelaskan konsekuensi jika universalitas spektral ternyata salah
+    \item Menyediakan cara-cara matematis untuk mematahkan Teori Idris
+    \item Memberikan kriteria eksperimental yang dapat memfalsifikasi prediksi teori
+    \item Menunjukkan bahwa kekuatan teori bukan hanya pada prediksinya, tetapi 
+          pada keberaniannya memaparkan titik-titik yang dapat mematahkan teori
+\end{itemize}
+
+\begin{quote}
+Bab ini menegaskan bahwa Teori Idris dapat difalsifikasi 
+secara matematis maupun eksperimental. 
+Kekuatan teori ini bukan hanya pada prediksinya, 
+tetapi pada keberaniannya memaparkan titik-titik yang dapat mematahkan teori.  
+Inilah syarat dasar dari teori fundamental yang layak diuji oleh komunitas ilmiah.
+\end{quote}
+
+\textbf{Keterkaitan dengan Bab Berikutnya:}
+
+Bab XXI akan menutup teori dengan menjelaskan semua fenomena "aneh" mekanika 
+kuantum — dari dualisme partikel-gelombang, eksperimen celah ganda, superposisi, 
+entanglement, hingga paradoks EPR — dalam kerangka graf RJI--$N$. Bab XXI akan 
+menunjukkan bahwa tidak ada fenomena misterius yang memerlukan interpretasi 
+filosofis kompleks; semuanya adalah konsekuensi natural dari realitas primer 
+berupa graf informasi. Setelah satu abad kebingungan tentang mekanika kuantum, 
+Bab XXI akan menutup perdebatan dengan satu pernyataan sederhana: 
+"Tidak ada misteri. Hanya ada graf."

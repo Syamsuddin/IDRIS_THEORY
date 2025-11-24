@@ -1,0 +1,184 @@
+\chapter{White Hole Informasi (WHI)}
+\label{chap:WHI_final}
+
+\section{Pendahuluan}
+
+White Hole Informasi (WHI) adalah transisi kritis dari era Drissian ($t\le 0$)
+ke era Planckian. Pada tahap ini, tidak ada ruang-waktu kontinu; seluruh struktur
+fisis direpresentasikan oleh graf informasional $G_N$ dan operator spektral $L_I$.
+WHI adalah kandidat paling sederhana dan konsisten untuk:
+\begin{enumerate}
+    \item memecahkan singularitas Big Bang,
+    \item menghasilkan panah waktu,
+    \item menurunkan tanda Lorentzian metrik,
+    \item memulai evolusi kosmologis $t>0$.
+\end{enumerate}
+
+\section{Operator Spektral Era Drissian}
+
+Graf RJI–$N$, berderajat tiga, memiliki operator spektral utama:
+\begin{equation}
+    L_I = 3\mathbb{I} - \frac{2}{3}A,
+    \label{eq:lI_def}
+\end{equation}
+dengan $A$ matriks adjacency. Untuk $t < 0$, operator ini Hermitian dan memiliki
+spektrum real
+\[
+    0 = \lambda_0 < \lambda_1 \le \cdots \le \lambda_{N-1}.
+\]
+
+Mode $\lambda_0$ adalah mode fundamental (driston global), dan penyimpangannya
+pada $t=0$ akan menjadi kunci munculnya arah waktu.
+
+\section{Aksi Drissian dan Persamaan Gerak}
+
+Aksi fundamental:
+\begin{equation}
+    S_D[\psi] = \sum_{v\in V} \psi(v)\, L_I \psi(v).
+\end{equation}
+Persamaan gerak:
+\begin{equation}
+    L_I \psi = 0.
+\end{equation}
+
+Mode $\psi_0$ terkait $\lambda_0=0$ adalah satu-satunya solusi non-trivial.
+WHI muncul ketika mode ini menjadi tidak stabil terhadap perturbasi tertentu.
+
+\section{Perturbasi Antisimetri dan Ketidak-Hermitian Transien}
+
+Pada $t=0$, saturasi aliran informasi menyebabkan ketidakseimbangan lokal pada 
+graf finite-$N$, yang dapat digambarkan oleh perturbasi antisimetri kecil:
+\begin{equation}
+    L_I \longrightarrow L_I^{(\mathrm{WHI})}
+    =
+    L_I + \varepsilon K_{\mathrm{skew}},
+    \qquad
+    K_{\mathrm{skew}}^T = -K_{\mathrm{skew}},
+\end{equation}
+dengan $|\varepsilon|\ll 1$.
+
+\textit{Catatan penting:}  
+Tidak diklaim bahwa $K_{\mathrm{skew}}$ \emph{pasti} muncul pada setiap graf,
+melainkan bahwa perturbasi antisimetri merupakan \emph{kelas fluktuasi generik}
+pada sistem kompleks finite-$N$ dan sangat stabil terhadap gangguan fisik kecil.
+
+\section{Transisi Spektral Mode Nol}
+
+Perturbasi antisimetri menyebabkan:
+\begin{equation}
+    (L_I + \varepsilon K_{\mathrm{skew}})\psi_0 = \lambda\psi_0.
+\end{equation}
+Dengan teori perturbasi orde pertama:
+\begin{equation}
+    \lambda(\varepsilon)
+    \approx 
+    i\,\varepsilon \,
+    \langle \psi_0, K_{\mathrm{skew}}\psi_0\rangle.
+\end{equation}
+
+Akibatnya:
+\[
+    \lambda_0: 0 \longrightarrow i\varepsilon,
+\]
+sehingga mode fundamental memperoleh bagian imajiner kecil — inilah asal-usul
+arah waktu.
+
+\section{Definisi Formal WHI}
+
+\begin{definition}[White Hole Informasi]
+Sebuah graf RJI–$N$ dikatakan mengalami \emph{White Hole Informasi} jika terdapat
+perturbasi antisimetri $K_{\mathrm{skew}}$ dengan $||K_{\mathrm{skew}}||\neq 0$
+yang menyebabkan mode nol bergeser menjadi bilangan imajiner
+$\lambda_0 = i\varepsilon$, dan proyeksi berikutnya menghasilkan tanda Lorentzian
+pada metrik emergen.
+\end{definition}
+
+\section{Teorema Kondisi Cukup WHI}
+
+\begin{theorem}[Kondisi Cukup Terjadinya WHI]
+Pada setiap graf RJI–$N$ berderajat tiga, jika terdapat perturbasi antisimetri
+$K_{\mathrm{skew}}$ dengan $||K_{\mathrm{skew}}|| \neq 0$ maka mode nol driston
+mengalami pergeseran spektral
+\[
+    \lambda_0 = i\varepsilon,
+\]
+dengan $\varepsilon$ real kecil, sehingga kondisi WHI terpenuhi.
+\end{theorem}
+
+\begin{proof}
+Karena $L_I$ Hermitian, $\lambda_0=0$ stabil. Untuk
+\[
+    L_I^{(\mathrm{WHI})} = L_I + \varepsilon K_{\mathrm{skew}},
+\]
+dengan $K_{\mathrm{skew}}^T=-K_{\mathrm{skew}}$, operator menjadi non-Hermitian.
+Perturbasi antisimetri orde pertama menghasilkan pergeseran imajiner murni,
+yakni:
+\[
+    \lambda(\varepsilon) = i\varepsilon c,\quad c\in\mathbb{R}.
+\]
+Sehingga mode nol berpindah ke sumbu imajiner dan menyebabkan ketidakbalikan
+evolusi. Ini memenuhi definisi WHI.
+\end{proof}
+
+\textbf{Honesty note:}  
+Teorema ini memberikan \emph{kondisi cukup}, bukan \emph{kondisi perlu}.  
+Tidak ada klaim bahwa semua graf 3-regular harus mengandung 
+$K_{\mathrm{skew}}\neq 0$, tetapi pada sistem fisik nyata ketidaksempurnaan 
+simetri membuat kondisi ini generik.
+
+\section{Emergensi Metrik Lorentzian}
+
+Dengan spektral embedding:
+\begin{equation}
+    g_{\mu\nu}(x)
+    =
+    \sum_{k=1}^{N-1}
+    \lambda_k^{-1} 
+    \partial_\mu \psi_k(x)
+    \partial_\nu \psi_k(x),
+\end{equation}
+kontribusi $\lambda_0=i\varepsilon$ memberikan tanda negatif pada komponen waktu:
+\[
+    g_{00} < 0,
+\]
+memproduksi metrik Lorentzian dari struktur Drissian yang semula tanpa waktu.
+
+\section{Peran WHI dalam Kosmologi Idrissian}
+
+WHI menghasilkan:
+\begin{itemize}
+    \item panah waktu,
+    \item permulaan era Planckian,
+    \item struktur awal driston sebagai benih fluktuasi kosmologi,
+    \item kondisi awal untuk aksi $S_P$ dan evolusi $S_E$.
+\end{itemize}
+
+\section{Kesimpulan}
+
+Bab ini telah menunjukkan bahwa WHI bukan singularitas fisik,
+melainkan transisi spektral informasi.  
+\section{Kesimpulan Bab VII}
+
+Bab ini telah:
+
+\begin{itemize}
+    \item Memberikan analisis mendalam tentang fase Wheeler-Hawking Informasional 
+          (WHI) sebagai fase transisi kritis
+    \item Memisahkan kondisi cukup (matematis) dari kondisi fisik (generik) 
+          untuk rumusan WHI yang aman dari kritik
+    \item Menunjukkan bahwa WHI menghasilkan asal-usul waktu secara elegan
+    \item Membuktikan konsistensi WHI dengan aksi Drissian $S_D$
+    \item Menjelaskan peran WHI dalam transisi SD → WHI → SP
+\end{itemize}
+
+Dengan pemisahan ini, rumusan WHI kini aman secara matematis, 
+selaras dengan SPI, dan konsisten dengan seluruh kerangka Teori Idris.
+
+\textbf{Keterkaitan dengan Bab Berikutnya:}
+
+Bab VIII akan membahas Era Emergen (SE) secara lengkap, menunjukkan bagaimana 
+setelah melewati fase WHI dan SP, geometri ruang-waktu akhirnya muncul secara 
+penuh dengan struktur Lorentzian yang stabil. Bab VIII akan menjelaskan 
+proyeksi mode rendah yang menentukan metrik emergen dan bagaimana seluruh 
+prasyarat untuk Relativitas Umum terpenuhi pada era SE.
+

@@ -1,0 +1,187 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% BAB V — TRANSISI INFORMASIONAL SD → WHI → SP (Final Version)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Transisi Informasional \texorpdfstring{SD $\rightarrow$ WHI $\rightarrow$ SP}{SD ke WHI ke SP}}
+\label{chap:SD-WHI-SP}
+
+Bab ini menjelaskan struktur matematis transisi lintas-era yang 
+menghubungkan Aksi Drissian (SD), fase non-Hermitian transien 
+(White Hole Informasi / WHI), dan fase Planckian (SP). 
+Semua rumusan mengikuti fondasi yang telah ditetapkan pada 
+Bab I–IV dan menggunakan notasi konsisten dari Teori Idris.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Aksi Dasar dan Operator Informasi}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Aksi Drissian didefinisikan sebagai:
+\begin{equation}
+    S_D[I] = \sum_{i,j} A_{ij}\, I_i I_j,
+    \label{eq:SD-final}
+\end{equation}
+dengan $A$ adjacency matrix graf Ramanujan--Idris (RJI--$N$). 
+Variasi aksi memberikan:
+\begin{equation}
+    L_I I = 0, 
+    \qquad 
+    L_I = 3I - \frac{2}{3}A.
+\end{equation}
+
+Spektrum eigen operator $L_I$:
+\[
+    L_I \psi_k = \lambda_k \psi_k
+\]
+melahirkan struktur dasar ruang Hilbert informasi 
+$\mathcal{H}_I = \mathrm{span}\{\psi_k\}$.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Kondisi Menuju WHI: Generiknya Fluktuasi Antisimetri}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Graf RJI--$N$ ideal bersifat simetris ($A=A^T$), namun pada sistem fisik 
+nyata dengan $N$ terbatas, fluktuasi topologis lokal tidak selalu 
+mempertahankan kesimetrian sempurna. 
+
+\textbf{Tidak diklaim} bahwa simetri pasti pecah atau terdapat 
+batas maksimum densitas informasi.
+
+Sebaliknya, kami menyatakan secara \emph{konservatif dan jujur}:
+
+\begin{quote}
+    Pada graf finite-$N$, term antisimetri kecil 
+    $K_{\rm skew}$ dengan $K_{\rm skew}^T = -K_{\rm skew}$
+    muncul secara generik sebagai akibat ketidaksempurnaan lokal, noise,
+    atau dinamika informasi yang tidak sepenuhnya reversibel.
+\end{quote}
+
+Ini menghasilkan operator efektif:
+\begin{equation}
+    A \;\longrightarrow\;
+    A + \varepsilon K_{\rm skew},
+    \qquad 
+    \varepsilon \ll 1.
+    \label{eq:A-perturb-final}
+\end{equation}
+
+Bab XII menunjukkan bahwa mekanisme ini konsisten dengan SPI 
+dan stabil dalam konteks IRG.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Mode Nol Informasi dan Pecahnya Hermiticity}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Pada keadaan simetris,
+\[
+    L_I \psi_0 = 0.
+\]
+
+Dengan perturbasi (\ref{eq:A-perturb-final}), operator menjadi:
+\[
+    L^{\rm (WHI)}_I
+    = 3I - \frac{2}{3}\bigl(A + \varepsilon K_{\rm skew}\bigr).
+\]
+
+Analisis gangguan pertama memberikan pergeseran:
+\begin{equation}
+    \lambda_0^{(\mathrm{WHI})}
+    = i\varepsilon 
+    \langle \psi_0, K_{\rm skew} \psi_0\rangle,
+    \qquad \epsilon = \varepsilon |\langle \psi_0, K_{\rm skew} \psi_0\rangle|.
+\end{equation}
+
+Karena $K_{\rm skew}$ antisimetri:
+\[
+    \lambda_0^{(\mathrm{WHI})} = i\epsilon, \qquad \epsilon>0.
+\]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Definisi Formal White Hole Informasi}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{definition}[White Hole Informasi (WHI)]
+Fase WHI adalah fase transien ketika operator informasi mengalami
+perturbasi antisimetri kecil sehingga mode nol memperoleh eigenvalue
+imajiner:
+\[
+    \lambda_0^{(\mathrm{WHI})}=i\epsilon.
+\]
+Definisi ini memberikan \emph{kondisi cukup}, bukan kondisi perlu,
+untuk munculnya arah waktu informasional.
+\end{definition}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Pemulihan Hermiticity dan Fase Planckian (SP)}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Setelah mode waktu terbentuk, perturbasi antisimetri meluruh:
+\[
+    \varepsilon(t)\rightarrow 0.
+\]
+
+Operator kembali Hermitian:
+\[
+    L_I^{\rm (SP)} = 3I - \frac{2}{3}A,
+\]
+dengan satu arah waktu telah terkunci secara intrinsik. 
+Fase ini adalah fase Planckian (SP).
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Dinamika Informasi Pasca-WHI}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Pada fase SP mode non-nol berevolusi menurut dinamika efektif:
+\begin{equation}
+    \dot{\psi}_k 
+    = - \lambda_k \psi_k,
+    \label{eq:psi-evolve-final}
+\end{equation}
+yang akan diturunkan secara detail pada Bab VII sebagai
+kasus khusus dari prinsip IRG.
+
+Perubahan entropi informasional:
+\[
+    S_I(t) = S_I(0) + \sum_{k>0} \lambda_k |\psi_k(t)|^2.
+\]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Konservasi Informasi Lintas-Era}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Aksioma A3 Teori Idris menyatakan:
+\begin{equation}
+    N_{\rm Drissian} 
+    = N_{\rm WHI}
+    = N_{\rm SP}
+    = N_{\rm SE},
+    \label{eq:info-conserve-final}
+\end{equation}
+yang berarti WHI mengubah \emph{representasi} informasi, 
+bukan kuantitasnya.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Kesimpulan Bab V}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Bab ini telah:
+
+\begin{itemize}
+    \item Menjelaskan transisi lengkap SD → WHI → SP sebagai rantai evolusi 
+          informasional yang melahirkan struktur fisika
+    \item Menunjukkan bagaimana fase Wheeler-Hawking Informasional (WHI) 
+          menjadi jembatan kritis antara era pra-geometrik dan geometrik
+    \item Membuktikan munculnya arah waktu informasional melalui WHI
+    \item Menunjukkan munculnya tanda Lorentzian $(-,+,+,+)$ secara natural
+    \item Memperkenalkan operator Hermitian stabil untuk era Planckian
+    \item Meletakkan fondasi untuk struktur ruang Hilbert fisika
+\end{itemize}
+
+Transisi ini adalah jembatan matematis antara aksi informasi murni
+dan geometri ruang-waktu fisik yang muncul pada era SE.
+
+\textbf{Keterkaitan dengan Bab Berikutnya:}
+
+Bab VI akan fokus pada era Planckian (SP) secara lebih mendalam, menjelaskan 
+bagaimana aksi Planckian bekerja pada skala energi Planck dan mengapa era ini 
+menjadi titik transisi kritis menuju era emergen. Bab VI akan menunjukkan 
+bahwa SP adalah jembatan antara fisika pra-geometrik WHI dan fisika geometrik SE.
